@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{% endblock %}">
+<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+<link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
+
+
+<!-- What CSS is important? -->
+{% compress css %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Rye|Oldenburg|Lato" rel="stylesheet">
+<link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
+<link rel="stylesheet" href="{% static "skins/default.css" %}">
+<link rel="stylesheet" href="{% static "css/newstyle.css" %}">
+<link rel="stylesheet" href="{% static "css/indexstyle.css" %}">
+{% endcompress %}
+
+{% compress js %}
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+{% endcompress %}
+
+<!--[if lt IE 9]>
+<script src="{% static "js/html5shiv.js" %}"></script>
+<script src="{% static "js/respond.min.js" %}"></script>
+<![endif]-->
+
+{% block extra_head %}{% endblock %}
+{% block extra_style %}{% endblock %}
+<!-- return css <style here!> -->
+
+</head>
+
+
+
+
+<!-- BODY Boilerplate -->
+<body id="{% block body_id %}body{% endblock %}">
+
+{% block Header%}
+    <section id="Header">
+    	<div class="container">
+    	    <div class="row">
+    			<div class="col-md-12 pt-4 pb-2">
+                    <h2><a href="/">Custom Conventions</a><button type="button" class="align-middle float-right btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars"></i></h2>
+                    <p>Your local group planners in New Orleans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock Header%}
+
+{% block PageTitle %}
+<section id="PageTitle">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="boxed m-0 p-3">
+                    <h1 class="m-0">{{ page.title }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock PageTitle %}
+
+{% block all_content %}
+
+    <section id="MainContent">
+    	<div class="container">
+            <div class="row py-4">
+                    <div class="col-md-8">
+                    {% block main %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+{% endblock all_content %}
+
+
+{% include 'contact.html' %}
+{% include 'menu.html' %}
+
+
+<!-- FOOTER -->
+<section id="Footer">
+	<div class="container p-4">
+	    <div class="row">
+			<div class="mt-4 col-md-12">
+                <h1>Custom Conventions  <button type="button" class="float-right btn btn-outline-secondary btn-md" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars"></i></h1>
+                <p>New Orleans, LA. 2018
+                <br>Concierge Services for Group Planners.
+                <br>About this Website. Contact.
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

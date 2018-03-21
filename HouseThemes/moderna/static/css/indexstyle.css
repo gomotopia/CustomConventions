@@ -1,0 +1,113 @@
+/***********
+Title
+***********/
+
+
+#IndexTitle {
+    background-image: url("../img/skyline2jen.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#IndexTitle .spacer1 {
+    height: 2em;
+}
+
+#IndexTitle .spacer2 {
+    height: 5em;
+}
+
+.VeryBig {
+    font-size: 8em;
+    color: White;
+    font-family: Rye;
+}
+
+/*****************
+Leah
+*******************/
+
+#Leah {background-color: #fa8234;
+}
+
+
+/*****************
+All
+*******************/
+
+#All {
+    background-color: #223344;
+}
+
+#All .alltitle {
+    background-color: #fa8234;
+}
+
+#Expertise {background-image: url("../img/crawboiljen.jpg");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Credit {background-image: url("../img/beadlampall.JPG");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+#All .container {
+    background-position: center;
+}
+
+#All .spacer {
+    height: 15em;
+}
+
+/*****************
+Carling
+*******************/
+
+#Carling {background-image: url("../img/carlingtrumpet.JPG");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Carling .container {    background-color: rgba(0, 0, 0, 0.5);}
+
+#Carling h3 {
+    font-size: 1.75em;
+    color: White;
+    font-family: Oldenburg;
+    font-weight:100;
+	line-height:1.6em;
+    padding: 0;
+    display: block;
+    margin: 0;
+}
+
+#Carling .picture {background-image: url("../img/carling2.jpg");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 200px;
+}
+
+#Carling p {color: white;}
+
+#Carling .emph{
+    font-family: Rye;
+}
+
+
+/*****************
+Endorse
+*******************/
+
+#Endorse {background-color: #887799;
+
+}
+
+#Endorse p {color: White;}

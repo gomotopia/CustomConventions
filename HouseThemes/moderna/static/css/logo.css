@@ -1,0 +1,50 @@
+
+#logo {
+	font-family:'Lustria', sans-serif;
+  font-size:60px;
+	line-height:1em;
+	color:#333333;
+}
+
+#logo .capital {
+ 	font-size:1.5em;
+  position: absolute;
+  top: .12em;
+  left: 0;
+}
+
+#logo .ustom {
+  position: absolute;
+  left: .7em;
+}
+
+#logo .otherC {
+  left: 2.5em;
+}
+#logo .onventions {
+  position: absolute;
+  left: 4.5em;
+}
+
+#logo .NOLA {
+ 	font-size:.4em;
+  position: absolute;
+  top: 1.8em;
+  left: 16em;
+}
+
+
+}
+
+/*
+
+<div id="logo">
+
+  <span class = "capital">C</span><span class = "ustom">ustom</span>
+  <span class = "capital otherC">C</span><span class ="onventions">onventions</span>
+  <span class = "NOLA">New Orleans, La.</span>
+
+</div>
+
+
+*/

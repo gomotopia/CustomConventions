@@ -1,0 +1,267 @@
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+    font-family: 'Rye', cursive;
+    font-family: 'Oldenburg', cursive;
+    font-family: 'Lato', cursive;
+
+
+body {
+
+    --GreenDark: #223311; /* Turtle Green */
+    --GreenLight: #ccddbb;
+
+    --BlueDark: #223344;
+
+    --PurpleDarkPlus: #775566;
+    --PurpleDark: #555577; /* Comet */
+    --PurpleMed: #887799;
+    --PurpleLight: #aa8899; /* Bouquet */
+
+    --OrangeDarkPlus: #443322; /* Saddle */
+    --OrangeDark: #885544; /* Spicy Mix */
+    --OrangeMed: #bb8877;
+    --OrangeLight: #ccbbaa; /* Clam Shell */
+    --OrangeLightPlus: #fa8234;
+
+	font-family: Lato;
+	font-size: 16px;
+	font-weight:300;
+	line-height:1.6em;
+	color: White;
+}
+
+p{
+    font-family: Lato;
+	font-size: 1em;
+    color: #333333;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: White;
+    font-family: Oldenburg;
+    font-weight: 100;
+    display: block;
+    margin-bottom: .4em;
+}
+
+h2 {
+    font-size: 2em;
+	line-height:1.75em;
+    color: White;
+    font-family: Oldenburg;
+    font-weight: 100;
+    display: block;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: White;
+    font-family: Lato;
+    font-weight:100;
+	line-height:1.6em;
+    padding: 0;
+    display: block;
+    margin: 0;
+}
+
+li
+{
+    font-family: Lato;
+}
+
+
+
+.boxed
+{
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.boxed h3
+{
+    color: #333333;
+}
+
+.emph{
+    font-family: Rye;
+}
+
+/***********
+Header
+***********/
+
+#Header {
+    color: #BBBBBB;
+    background-color: #223344;
+}
+
+#Header a {
+    color: #BBBBBB;
+}
+
+#Header p {
+    color: #FFFFFF;
+}
+
+/*********************
+Main Content
+**********************/
+
+#MainContent {
+    background-color: #223311;
+}
+
+#MainContent h2 {
+    margin-bottom: .6em;
+}
+
+#MainContent p {
+	line-height:2em;
+    font-size: 1.25em;
+    color: White;
+}
+
+
+.pullquote {
+    background-size: cover;
+}
+
+.pullquote .spacer {
+    height: 5em;
+}
+
+.pullquote p {
+    font-family: Oldenburg;
+    background-color: #223311DD;
+}
+
+
+/***********
+Title
+***********/
+
+#PageTitle {
+    background-image: url("../img/skyline2jen.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+#PageTitle h1 {
+    color: #555555;
+}
+
+
+/*****************
+Modal
+*******************/
+
+.modal-content {
+    background-color: Black;
+}
+
+.modal-content p {
+    color: White;
+}
+
+/*****************
+Footer
+*******************/
+
+#Footer {
+    color: #223344;
+    background-color: Black;
+}
+
+/*****************
+Modal
+*******************/
+
+.modal .iconbutton {color: White;}
+
+
+@media (max-width: 768px)
+{
+    body {font-size: 16px;}
+    .VeryBig {font-size: 5em;}
+    h1 {font-size: 2em;}
+    h3 {font-size: 1.25em;}
+}
+
+
+@media (max-width: 374px)
+{
+    .VeryBig {font-size: 4em;}
+
+}
+
+#whychoose{
+    background-image: url("../img/yellowjen.JPG");
+    background-position: center;
+}
+
+/******************
+Buttons
+******************/
+
+.btn {
+    white-space:normal;
+    font-family: Lato;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #bb8877;
+  border-color: #bb8877;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #ccbbaa;
+  border-color: #ccbbaa;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-sample {
+  background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #ccddbb;
+  border-color: #ccddbb;
+}
+
+.btn-primary .badge {
+  color: #611BBD;
+  background-color: #ffffff;
+}
+
+

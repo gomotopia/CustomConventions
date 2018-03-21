@@ -1,0 +1,288 @@
+{% extends "basetest.html" %}
+{% load i18n  mezzanine_tags staticfiles%}
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+
+
+
+
+
+{% block title %}{% trans "Home" %}{% endblock %}
+
+
+
+{% block breadcrumb_wrapper %}
+{% endblock %}
+
+{% block title_wrapper %}
+{% endblock %}
+
+
+
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+
+{% block all_content %}
+
+<style>
+#main-slider .carousel h2 {
+  color:#fff;
+  font-size: 60px;
+  width: 100%;
+}
+#main-slider .carousel p {
+  color:#fff;
+  font-size: 28px;
+  width: 100%;
+  line-height: 1.6em;
+}
+#main-slider .carousel .boxed {
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+
+<section class="no-margin" id="main-slider" style="top: 0px;">
+        <div class="carousel wet-asphalt" id="myCarousel" data-interval="false" data-pause="true">
+            <ol class="carousel-indicators">
+                <li data-slide-to="0" data-target="#myCarousel" class="active"></li>
+                <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+                <li data-slide-to="2" data-target="#myCarousel" class=""></li>
+                <li data-slide-to="3" data-target="#myCarousel" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="itembg" style="background-image: url({% static "img/carOkra.jpg" %});" ></div>
+                    <div class="container"><div class="row"><div class="col-sm-12">
+                                <div class="carousel-content center centered" style="margin: 50px 0 0 20px">
+                                    <h2 class="boxed animation animated-item-1">Welcome to New Orleans</h2>
+                                    <br><p class="boxed animation animated-item-2">Custom Conventions provides high-end concierge services for group leaders and travel professionals.</p>
+                                    <br><a href="#" class="btn btn-md animation animated-item-3">Contact Us Today!</a>
+                                </div></div></div></div></div><!--/.item-->
+
+                <div class="item">
+                    <div class="itembg" style="background-image: url({% static "img/carCandy.jpg" %})" ></div>
+                    <div class="container"><div class="row"><div class="col-sm-12">
+                                <div class="carousel-content center centered" style="margin-top: 50px;">
+                                    <h2 class="boxed animation animated-item-1">We do it all</h2>
+                                    <br><p class="boxed animation animated-item-2">In New Orleans, our comprehensive expertise in guiding, hosting and entertaining groups is unmatched.</p>
+                                    <br><a href="#" class="btn btn-md animation animated-item-3">Our Services</a>
+                                </div></div></div></div></div><!--/.item-->
+                <div class="item">
+                    <div class="itembg" style="background-image: url({% static "img/carWarehouse.jpg" %})"></div>
+                    <div class="container"><div class="row"><div class="col-sm-12">
+                                <div class="carousel-content centered" style="margin-top: 50px;">
+                                    <h2 class="boxed animation animated-item-1">Take All the Credit</h2>
+                                    <br><p class="boxed animation animated-item-2">Each experience we craft aims for rich authenticity and is always true to the client.</p>
+                                    <br><a href="#" class="btn btn-md animation animated-item-3">Browse our Notebook</a>
+                                </div></div></div></div></div><!--/.item-->
+                <div class="item">
+                    <div class="itembg" style="background-image: url({% static "img/carMardiGras.jpg" %})" ></div>
+                    <div class="container"><div class="row"><div class="col-sm-12">
+                                <div class="carousel-content center centered" style="margin-top: 50px;">
+                                    <h2 class="boxed animation animated-item-1">Choose the Difference</h2>
+                                    <br><p class="boxed animation animated-item-2">The difference is over 40 years of working in our beautiful, maddening, and inspiring community.</p>
+                                    <br><a href="#" class="btn btn-md animation animated-item-3">About Our History</a>
+                                </div></div></div></div></div><!--/.item-->
+
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a data-slide="prev" href="#myCarousel" class="prev hidden-xs">
+            <i class="fa fa-hand-o-left"></i>
+        </a>
+        <a data-slide="next" href="#myCarousel" class="next hidden-xs">
+            <i class="fa fa-hand-o-right"></i>
+        </a>
+    </section>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="600">
+<h2><a href="/">Custom Conventions</a></h2>
+</nav>
+
+
+
+
+
+
+
+
+<section class="callaction">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="big-cta">
+					<div class="cta-text">
+						<h2><span>Custom Conventions</span> New Orleans, LA</h2>
+						<p>Custom Conventions is a full service, 30-year-old, professionally staffed destination management company dedicated to providing you with creative and affordable solutions, each individually tailored to meet your every need.</p>
+					</div>
+					<div class="box-bottom">
+						<a href="/why-choose-a-local-expert/">Why Choose a Local DMC?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-sm-6 col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Our History</h4>
+								<div class="icon">
+								<i class="fa fa-pagelines fa-3x"></i>
+								</div>
+								<p class="">
+
+                                Custom Conventions is the work of Carling Dinkler, a lifelong specialist in New Orleans travel and logistics. Learn about our hearty experience.
+
+								</p>
+
+							</div>
+							<div class="box-bottom">
+								<a href="/history/">About Us</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Turn-Key Logistics</h4>
+								<div class="icon">
+								<i class="fa fa-unlink fa-3x"></i>
+								</div>
+								<p>
+								 Sit back and trust us to handle groups sized from 2 to 2,000. We have negotiated prices on accomodation, transportation and more.
+								</p>
+
+							</div>
+							<div class="box-bottom">
+								<a href="/services/">Our Services</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Cultural Exchanges</h4>
+								<div class="icon">
+								<i class="fa fa-flag fa-3x"></i>
+								</div>
+								<p>
+								 New Orleans is proud of its world-famous heritage. We have endless ways to inspire creativity in any group.<br /><br />
+								</p>
+
+							</div>
+							<div class="box-bottom">
+								<a href="/services/">Our Services</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Fun Events</h4>
+								<div class="icon">
+								<i class="fa fa-asterisk fa-3x"></i>
+								</div>
+								<p>
+								Keep them talking with memorable and vibrant events. Indulge your imagination- we'll handle the rest.<br /><br />
+								</p>
+
+							</div>
+							<div class="box-bottom">
+								<a href="/services/">Our Services</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- divider -->
+			<div class="col-lg-12">
+				<div class="solidline"></div>
+			</div>
+		<!-- end divider -->
+		</div>
+
+		{% comment %}
+
+		<!-- Portfolio Projects -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Recent Works</h4>
+				<div class="row">
+					<section id="projects">
+					<ul class="portfolio" id="thumbs">
+						<!-- Item Project and Filter Name -->
+						<li data-type="web" data-id="id-0" class="col-lg-3 design">
+						<div class="item-thumbs">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/1.jpg" %}" title="Work 1" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis." src="{% static "img/works/1.jpg" %}">
+						</div>
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li data-type="icon" data-id="id-1" class="item-thumbs col-lg-3 design">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/2.jpg" %}" title="Work 2" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis." src="{% static "img/works/2.jpg" %}">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/3.jpg" %}" title="Work 3" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis." src="{% static "img/works/3.jpg" %}">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/4.jpg" %}" title="Work 4" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis." src="{% static "img/works/4.jpg" %}">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+		{% endcomment %}
+
+                <div class="col-md-12">
+                    <p class="lead">Chat with us about your New Orleans experience.</p>
+                    <a class="btn btn-lg btn-default btn-block" href="tel:5049440814">(504) 944-0814</a>
+                    <a class="btn btn-lg btn-default btn-block" href = "mailto:carling@customconventions.com">carling@customconventions.com</a>
+                    <a class="btn btn-lg btn-default btn-block" href="http://www.facebook.com/customconventions" target="_blank">Follow us on Facebook</a>
+                </div>
+
+
+	</div>
+	</section>
+
+{% endblock %}
