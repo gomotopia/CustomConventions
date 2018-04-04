@@ -10,6 +10,16 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/favico.ico" %}">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97427445-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97427445-1');
+</script>
+
 
 <!-- What CSS is important? -->
 {% compress css %}
@@ -96,15 +106,27 @@
 <section id="Footer">
 	<div class="container p-4">
 	    <div class="row">
-			<div class="mt-4 col-md-12">
-                <h1>Custom Conventions  <button type="button" class="float-right btn btn-outline-secondary btn-md" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars"></i></h1>
+			<div class="mt-4 col-md-6">
+                <h1>Custom Conventions</h1>
                 <p>New Orleans, LA. 2018
                 <br>Concierge Services for Group Planners.
-                <br>Select photography provided by <a href="http://www.jenkarpowicz.com" target="_blank">Jen Karpowicz.</a>
+                <br>Designed by Ryan Gomez. Select photography provided by <a href="http://www.jenkarpowicz.com" target="_blank">Jen Karpowicz.</a>
                 <br><a href="#" data-toggle="modal" data-target="#contactModal">Contact Custom Conventions.</a>
             </div>
-        </div>
+			<div class="mt-4 col-md-4">
+                <a href="http://www.neworleans.com" target="_blank"><img src="{% static "img/cvblogo.png" %}" width="200"></img></a>
+                <p>Charter Member</p>
+            </div>
+			<div class="mt-4 col-md-2">
+			    <h1><button type="button" class="float-right btn btn-outline-secondary btn-md" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars"></i></h1>
+            </div>
     </div>
+</section>
+
+
+
+
+
 </section>
 
 </body>
